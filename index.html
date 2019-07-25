@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        *{
+            font-family: "Raleway";
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .menublock {
+            height: 100vh;
+            width: 100vw;
+            background-color: #1a1a1a;
+        }
+
+        .menutitle{
+            letter-spacing: .05em;
+            font-weight: 700;
+        }
+
+        .closeIcon{
+            position: relative;
+            right: 0px;
+            top: 32px;
+            width: 40px;
+            height: 40px;
+            background-color: hotpink;
+            background-image: url("assets/cansul.svg");
+        }
+
+        .burgericon {
+            /* background-color: cyan; */
+            position: relative;
+            height: auto;
+            width: auto;
+            top: -8px;
+        }
+
+        #rectangle1 {
+            height: 4px;
+            width: 32px;
+            background-color: #1a1a1a;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+        #rectangle2 {
+            height: 4px;
+            width: 24px;
+            background-color: #1a1a1a;
+            position: absolute;
+            right: 0px;
+            top: 8px;
+        }
+        #rectangle3 {
+            height: 4px;
+            width: 16px;
+            background-color: #1a1a1a;
+            position: absolute;
+            right: 0px;
+            top: 16px;
+        }
+
+    </style>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="menublock">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="closeIcon"></div>
+                    <h2 class="text-white mt-5 menutitle">TUNFC</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hide row justify-content-center p-0 m-0">
+        <div class="col-12 text-center p-0 m-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand font-weight-bold ml-4 ml-sm-3" href="#">TUNFC</a>
+                <div class="navbar-toggler mr-4 mr-sm-3 burgericon border-0" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="row">
+                        <div class="col">
+                            <div id="rectangle1"></div>
+                            <div id="rectangle2"></div>
+                            <div id="rectangle3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Articles</a>
+                        <a class="nav-item nav-link" href="#">Registration</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <nav class="hide navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand font-weight-bold ml-4 ml-sm-3" href="#">TUNFC</a>
+        <!-- <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="navbar-toggler mr-4 mr-sm-3 burgericon border-0" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="row">
+                <div class="col">
+                    <div id="rectangle1"></div>
+                    <div id="rectangle2"></div>
+                    <div id="rectangle3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="navbar-toggler mr-3 border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
