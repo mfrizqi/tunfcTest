@@ -7,11 +7,20 @@ body {
 }
 
 .regular {
+    font-weight: 400;
+}
+
+.medium {
     font-weight: 500;
+}
+
+.semibold{
+    font-weight: 600;
 }
 
 .extrabold {
     font-weight: 800;
+    letter-spacing: .05em;
 }
 
 .hide {
@@ -24,8 +33,7 @@ body {
 }
 
 .title {
-    font-size: 3em;
-    letter-spacing: .05em;
+    font-size: 3.5em;
 }
 
 .subtitle {
@@ -33,7 +41,46 @@ body {
     width: 95%;
 }
 
+.header .caption{
+    margin: 10vh 0 0 0;
+    font-size: 1em;
+    width: 94%;
+}
 
+.caption{
+    font-size: .9em;
+    line-height: 150%;
+}
+
+/* Content */
+.content{
+    margin: 35vh 0 0 0;
+}
+
+.r90{
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+}
+/* Tujuan Content */
+
+.tujuan .caption{
+    margin: 20vh 0 0 0;
+    width: 90%
+}
+
+.tujuan .space{
+    margin: 12vh;
+}
+
+#TujuanImg{
+    position: absolute;
+    top: -15vh;
+    right: 15vw;
+    content: "";
+    width: 176px;
+    height: 220px;
+    background-color: #ececec;
+}
 
 /* Menu when viewport on mobile device */
 .menublock {
