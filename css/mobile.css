@@ -6,6 +6,10 @@ body {
     overflow-x: hidden;
 }
 
+.mobile-screen{
+    display: block;
+}
+
 .regular {
     font-weight: 400;
 }
@@ -53,8 +57,12 @@ body {
 }
 
 /* Content */
-.content{
+.content-v{
     margin: 20em 0 0 0;
+}
+
+.content-h{
+    margin: 10em 0 0 0;
 }
 
 .r90{
@@ -76,6 +84,71 @@ body {
     position: absolute;
     top: -9em;
     right: 1em;
+    content: "";
+    width: 240px;
+    height: 320px;
+    background-color: #ececec;
+}
+
+/* Sejarah Content */
+
+.sejarah .caption{
+    margin: 15em 0 0 0;
+    width: 95%
+}
+
+.sejarah .space{
+    margin: 9vh;
+}
+
+#SejarahImg{
+    position: absolute;
+    top: -10em;
+    right: 1em;
+    content: "";
+    width: 240px;
+    height: 320px;
+    background-color: #ececec;
+}
+
+/* Maskot Content */
+
+.maskot .caption{
+    margin: 3em 0 0 0;
+    width: 90%
+}
+
+.maskot-video{
+    margin: 3em 0 0 0;
+    content: "";
+    height: 240px;
+    width: 100%;
+    background-color: #ececec;
+}
+.maskot .space{
+    margin: 9vh;
+}
+
+#MaskotImg{
+    content: "";
+    width: 240px;
+    height: 320px;
+    background-color: #ececec;
+}
+
+/* Dukungan Content */
+
+.dukungan .caption{
+    margin: 3em 0 0 0;
+    width: 95%
+}
+
+.dukungan .space{
+    margin: 9vh;
+}
+
+#DukunganImg{
+    margin: 4em 0 0 0;
     content: "";
     width: 240px;
     height: 320px;
