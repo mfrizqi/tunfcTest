@@ -44,7 +44,7 @@ body {
 .header .caption{
     margin: 10vh 0 0 0;
     font-size: 1em;
-    width: 94%;
+    width: 90%;
 }
 
 .caption{
@@ -77,8 +77,8 @@ body {
     top: -15vh;
     right: 8vw;
     content: "";
-    width: 220px;
-    height: 820px;
+    width: 240px;
+    height: 320px;
     background-color: #ececec;
 }
 
