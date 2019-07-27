@@ -64,21 +64,21 @@ body {
 /* Tujuan Content */
 
 .tujuan .caption{
-    margin: 20vh 0 0 0;
+    margin: 30vh 0 0 0;
     width: 90%
 }
 
 .tujuan .space{
-    margin: 12vh;
+    margin: 9vh;
 }
 
 #TujuanImg{
     position: absolute;
     top: -15vh;
-    right: 15vw;
+    right: 8vw;
     content: "";
-    width: 176px;
-    height: 220px;
+    width: 220px;
+    height: 320px;
     background-color: #ececec;
 }
 
