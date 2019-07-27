@@ -29,7 +29,7 @@ body {
 
 /* Header */
 .header {
-    margin: 15vh 0 0 0;
+    margin: 10em 0 0 0;
 }
 
 .title {
@@ -42,7 +42,7 @@ body {
 }
 
 .header .caption{
-    margin: 10vh 0 0 0;
+    margin: 7em 0 0 0;
     font-size: 1em;
     width: 90%;
 }
@@ -54,7 +54,7 @@ body {
 
 /* Content */
 .content{
-    margin: 35vh 0 0 0;
+    margin: 20em 0 0 0;
 }
 
 .r90{
@@ -64,7 +64,7 @@ body {
 /* Tujuan Content */
 
 .tujuan .caption{
-    margin: 30vh 0 0 0;
+    margin: 15em 0 0 0;
     width: 90%
 }
 
@@ -74,8 +74,8 @@ body {
 
 #TujuanImg{
     position: absolute;
-    top: -15vh;
-    right: 8vw;
+    top: -9em;
+    right: 1em;
     content: "";
     width: 240px;
     height: 320px;
