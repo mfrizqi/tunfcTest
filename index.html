@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:,400,500,600,700,800">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <!-- <link rel="stylesheet" href="css/mobile.css"> -->
+    <!-- <link rel="stylesheet" href="css/desktop.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- <style>
         * {
             font-family: "Raleway";
@@ -111,16 +114,17 @@
             width: 95%;
         }
     </style> -->
-    <title>Hello, world!</title>
+    <title>TUNFC - Telkom University National Futsal Competition</title>
 </head>
 
 <body>
-    <div class=" hide menublock">
+    <!-- Menu For Mobile -->
+    <div class=" hide menublock" id="FullMenu">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-10">
                     <div class="closeIcon"></div>
-                    <div class="closebtn">
+                    <div class="closebtn" id="CloseBtn">
                         <div class="closeMe"></div>
                     </div>
                     <div>
@@ -132,33 +136,36 @@
         </div>
     </div>
 
+    <!-- Navbar -->
     <div class="row justify-content-center p-0 mt-4 mx-1">
-        <div class="col-12 text-center p-0 m-0">
+        <div class="col-12 col-md-8 text-center p-0 m-0">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand ml-4 ml-sm-3 extrabold" href="#"">TUNFC</a>
-                <div class=" navbar-toggler mr-4 mr-sm-3 burgericon border-0" data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                <a class="navbar-brand ml-4 ml-md-0 extrabold" href="#"">TUNFC</a>
+                <div class=" navbar-toggler mr-4 mr-md-0 burgericon border-0" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <div class="row">
                         <div class="col">
-                            <div id="rectangle1"></div>
-                            <div id="rectangle2"></div>
-                            <div id="rectangle3"></div>
+                            <div id="ToMenu">
+                                <div id="rectangle1"></div>
+                                <div id="rectangle2"></div>
+                                <div id="rectangle3"></div>
+                            </div>
                         </div>
                     </div>
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Articles</a>
-                <a class="nav-item nav-link" href="#">Registration</a>
+                <a class="nav-item nav-link active semibold" href="#">Beranda<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link semibold" href="#">Artikel</a>
+                <a class="nav-item nav-link semibold" href="#">Rekrutmen</a>
             </div>
         </div>
         </nav>
     </div>
     </div>
 
-    <div class="mobile-screen">
+    <!-- Mobile Version Screen -->
+    <div class="mobile-screen hide">
         <div class="container-fluid">
             <!-- Header Section -->
             <div class="row justify-content-center">
@@ -293,42 +300,429 @@
         </div>
     </div>
 
-    <div class="row pb-4 pt-5 px-3 m-0 footer">
-        <div class="col-8">
-            <h3 class="bold">TUNFC</h3>
-            <p>Telkom University National Futsal Championship</p>
+    <!-- Desktop Version Screen -->
+    <div class="desktop-screen hide">
+        <div class="container-fluid">
+            <!-- Header Section -->
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="d-header">
+                        <h1 class="extrabold title">TUNFC</h1>
+                        <p class="subtitle semibold">Telkom University National <br /> Futsal Championship</p>
+                        <div class="caption medium">
+                            <p>Telkom University National Futsal Championship (TUNFC) <br />merupakan kompetisi futsal
+                                tingkat nasional antar perguruan <br /> tinggi yang diselenggarakan oleh UKM Bola Telkom
+                                University.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Section -->
+
+            <!-- Tujuan -->
+            <div class="row content-v">
+                <div class="col-8 tujuan">
+                    <h1 class="extrabold">Tujuan</h1>
+                    <div id="TujuanImg"></div>
+                    <div class="caption regular">
+                        <p>Tujuan utama diselenggarakannya Telkom University National Futsal Championship (TUNFC) untuk
+                            menjalin dan memperkuat tali persaudaraan antar mahasiswa perguruan tinggi di Indonesia.</p>
+
+                        <div class="space"></div>
+
+                        <p>TUNFC juga memberikan pengalaman kepada mahasiswa untuk bersaing secara kompetitif di bidang
+                            futsal dan membantu melahirkan atlet-atlet futsal berkualitas yang nantinya diharapkan mampu
+                            mengharumkan nama Indonesia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sejarah  -->
+            <div class="row content-v">
+                <div class="col sejarah">
+                    <h1 class="extrabold r90">Sejarah</h1>
+                    <div id="SejarahImg"></div>
+                    <div class="caption regular">
+                        <p>TUNFC pertama kali diselenggarakan pada tahun 2016 yang bertempat di Sigma Sport & Community
+                            Center – Progresif Football & Futsal Bandung. </p>
+
+                        <div class="space"></div>
+
+                        <p>Terbentuknya TUNFC di latar belakangi oleh UKM Bola Telkom University yang tak ingin selalu
+                            menjadi peserta kompetisi-kompetisi futsal tingkat nasional tetapi juga ingin menjadi
+                            penyelenggara kompetisi futsal tingkat nasional</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maskot & Jingle -->
+            <div class="row content-h">
+                <div class="col maskot">
+                    <h1 class="extrabold text-right">Maskot & <br /> Jingle</h1>
+                    <div class="maskot-video">
+                        <h2 class="text-center">video</h2>
+                    </div>
+                    <div class="space"></div>
+                    <div class="caption regular">
+                        <p>Tujuan utama diselenggarakannya Telkom University National Futsal Championship (TUNFC) untuk
+                            menjalin dan memperkuat tali persaudaraan antar mahasiswa perguruan tinggi di Indonesia.</p>
+                    </div>
+                    <div class="space"></div>
+                    <div id="MaskotImg"></div>
+                    <div class="space"></div>
+                    <div class="caption regular">
+                        <p>TUNFC juga memberikan pengalaman kepada mahasiswa untuk bersaing secara kompetitif di bidang
+                            futsal dan membantu melahirkan atlet-atlet futsal berkualitas yang nantinya diharapkan mampu
+                            mengharumkan nama Indonesia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Dukungan Pemain Pro -->
+            <div class="row content-h">
+                <div class="col dukungan">
+                    <h1 class="extrabold">Dukungan Pemain Pro</h1>
+                    <div id="DukunganImg"></div>
+                    <div class="space"></div>
+                    <div class="caption regular">
+                        <p>Telkom University National Futsal Championship (TUNFC) selalu menghadirkan inovasi tak
+                            terduga tiap tahunnya. Terbukti pada tahun 2018, TUNFC berhasil menjalin kerjasama dengan
+                            Syahidan Lubis. Bambang Bayu Saptaji, Andri Kustiawan dan Bonsu Hasibuan kemudian berhasil
+                            digaet pada TUNFC 2019</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Piala Bergilir-->
+            <div class="row content-h">
+                <div class="col maskot">
+                    <h1 class="extrabold text-right">Piala Bergilir TUNFC</h1>
+                    <div class="maskot-video">
+                        <h2 class="text-center">video</h2>
+                    </div>
+                    <div class="space"></div>
+                    <div>
+                        <div id="MaskotImg"></div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="caption regular">
+                        <p>TUNFC memiliki piala bergilir yang sangat bergengsi. Tidak puas dengan capaian di tahun-tahun
+                            sebelumnya, di tahun 2018 TUNFC menyediakan piala bergilir yang nantinya dapat dibawa pulang
+                            oleh tim universitas yang berhasil menjadi juara pertama pada perhelatan TUNFC tiga kali
+                            berturut-turut</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spacer  -->
+            <div class="row trophyToHall">
+
+            </div>
+
+            <!-- Hall Of Fame  -->
+            <div class="row content-v">
+                <div class="col halloffame">
+                    <h1 class="extrabold r90">Hall Of Fame</h1>
+                    <div id="HallImg"></div>
+                    <div class="caption regular">
+                        <p>Setiap penyelenggaraannya TUNFC selalu menghasilkan juara baru. Terbukti sejak awal berdiri
+                            hingga sekarang, belum pernah ada perguruan tinggi yang memenangkan TUNFC secara berturut
+                        </p>
+
+                        <div class="space"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-4 p-0 m-0">
-            <ul class="nav flex-column text-right">
-                <li class="nav-item">
-                    <a class="nav-link semibold" href="#">Beranda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link semibold" href="#">Artikel</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link semibold" href="#">Rekruitmen</a>
-                </li>
-            </ul>
+    </div>
+
+    <!-- Responsive Screen -->
+    <div class="responsive-screen">
+        <div class="container-fluid">
+            <!-- Header Section -->
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-8">
+                    <div class="header">
+                        <h1 class="extrabold title">TUNFC</h1>
+                        <p class="subtitle medium">Telkom University National Futsal Championship</p>
+                        <div class="caption medium">
+                            <p>Telkom University National Futsal Championship (TUNFC) merupakan kompetisi futsal tingkat
+                                nasional antar perguruan tinggi yang diselenggarakan oleh UKM Bola Telkom University.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Section -->
+
+            <!-- Tujuan Content-->
+            <div class="row justify-content-center content-v">
+                <div class="col-10 col-md-8 tujuan">
+                    <h1 class="extrabold r90 ">Tujuan</h1>
+                    <div id="TujuanImg"></div>
+                    <div class="caption regular">
+                        <p>Tujuan utama diselenggarakannya Telkom University National Futsal Championship (TUNFC) untuk
+                            menjalin dan memperkuat tali persaudaraan antar mahasiswa perguruan tinggi di Indonesia.</p>
+
+                        <div class="space"></div>
+
+                        <p>TUNFC juga memberikan pengalaman kepada mahasiswa untuk bersaing secara kompetitif di bidang
+                            futsal dan membantu melahirkan atlet-atlet futsal berkualitas yang nantinya diharapkan mampu
+                            mengharumkan nama Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-12 content-v"></div>
+                <!--  Sejarah Content -->
+                <div class="col-10 col-md-8 sejarah">
+                    <h1 class="extrabold r90">Sejarah</h1>
+                    <div id="SejarahImg"></div>
+                    <div class="caption regular">
+                        <p>TUNFC pertama kali diselenggarakan pada tahun 2016 yang bertempat di Sigma Sport & Community
+                            Center – Progresif Football & Futsal Bandung. </p>
+
+                        <div class="space"></div>
+
+                        <p>Terbentuknya TUNFC di latar belakangi oleh UKM Bola Telkom University yang tak ingin selalu
+                            menjadi peserta kompetisi-kompetisi futsal tingkat nasional tetapi juga ingin menjadi
+                            penyelenggara kompetisi futsal tingkat nasional</p>
+                    </div>
+                </div>
+                <!-- Maskot Content -->
+                <div class="col-12 content-h"></div>
+                <div class="col-10 col-md-8 maskot">
+                        <h1 class="extrabold text-right">Maskot & <br /> Jingle</h1>
+                        <div class="maskot-video">
+                            <h2 class="text-center">video</h2>
+                        </div>
+                        <div class="space"></div>
+                        <div class="caption regular">
+                            <p>Tujuan utama diselenggarakannya Telkom University National Futsal Championship (TUNFC) untuk
+                                menjalin dan memperkuat tali persaudaraan antar mahasiswa perguruan tinggi di Indonesia.</p>
+                        </div>
+                        <div class="space"></div>
+                        <div id="MaskotImg"></div>
+                        <div class="space"></div>
+                        <div class="caption regular">
+                            <p>TUNFC juga memberikan pengalaman kepada mahasiswa untuk bersaing secara kompetitif di bidang
+                                futsal dan membantu melahirkan atlet-atlet futsal berkualitas yang nantinya diharapkan mampu
+                                mengharumkan nama Indonesia</p>
+                        </div>
+                    </div>
+                    <!-- Spacer -->
+                    <div class="col-12 content-h"></div>
+                    <!-- Dukungan Content -->
+                    <div class="col-10 col-md-8 dukungan">
+                            <h1 class="extrabold">Dukungan Pemain Pro</h1>
+                            <div id="DukunganImg"></div>
+                            <div class="space"></div>
+                            <div class="caption regular">
+                                <p>Telkom University National Futsal Championship (TUNFC) selalu menghadirkan inovasi tak
+                                    terduga tiap tahunnya. Terbukti pada tahun 2018, TUNFC berhasil menjalin kerjasama dengan
+                                    Syahidan Lubis. Bambang Bayu Saptaji, Andri Kustiawan dan Bonsu Hasibuan kemudian berhasil
+                                    digaet pada TUNFC 2019</p>
+                            </div>
+                        </div>
+                        <!-- Spacer -->
+                        <div class="col-12 content-h"></div>
+                        <!-- Piala Content -->
+                        <div class="col-10 col-md-8 maskot">
+                                <h1 class="extrabold text-right">Piala Bergilir TUNFC</h1>
+                                <div class="maskot-video">
+                                    <h2 class="text-center">video</h2>
+                                </div>
+                                <div class="space"></div>
+                                <div>
+                                    <div id="MaskotImg"></div>
+                                </div>
+                                <div class="space"></div>
+                                <div class="caption regular">
+                                    <p>TUNFC memiliki piala bergilir yang sangat bergengsi. Tidak puas dengan capaian di tahun-tahun
+                                        sebelumnya, di tahun 2018 TUNFC menyediakan piala bergilir yang nantinya dapat dibawa pulang
+                                        oleh tim universitas yang berhasil menjadi juara pertama pada perhelatan TUNFC tiga kali
+                                        berturut-turut</p>
+                                </div>
+                            </div>
+
+                            <!-- Spacer -->
+                            <div class="col-12 trophyToHall"></div>
+                            <div class="col-12 content-v"></div>
+
+                            <!-- Hall Content -->
+                            <div class="col-10 col-md-8 halloffame">
+                                    <h1 class="extrabold r90">Hall Of Fame</h1>
+                                    <div id="HallImg"></div>
+                                    <div class="caption regular">
+                                        <p>Setiap penyelenggaraannya TUNFC selalu menghasilkan juara baru. Terbukti sejak awal berdiri
+                                            hingga sekarang, belum pernah ada perguruan tinggi yang memenangkan TUNFC secara berturut
+                                        </p>
+                
+                                        <div class="space"></div>
+                                    </div>
+                                </div>
+                        
+            </div>
+        
+            <!-- <div>
+            Sejarah 
+            <div class="row content-v hide">
+                <div class="col-10 col-md-8 sejarah">
+                    <h1 class="extrabold r90">Sejarah</h1>
+                    <div id="SejarahImg"></div>
+                    <div class="caption regular">
+                        <p>TUNFC pertama kali diselenggarakan pada tahun 2016 yang bertempat di Sigma Sport & Community
+                            Center – Progresif Football & Futsal Bandung. </p>
+
+                        <div class="space"></div>
+
+                        <p>Terbentuknya TUNFC di latar belakangi oleh UKM Bola Telkom University yang tak ingin selalu
+                            menjadi peserta kompetisi-kompetisi futsal tingkat nasional tetapi juga ingin menjadi
+                            penyelenggara kompetisi futsal tingkat nasional</p>
+                    </div>
+                </div>
+            </div>
+
+            Maskot & Jingle
+            <div class="row content-h hide">
+                <div class="col maskot">
+                    <h1 class="extrabold text-right">Maskot & <br /> Jingle</h1>
+                    <div class="maskot-video">
+                        <h2 class="text-center">video</h2>
+                    </div>
+                    <div class="space"></div>
+                    <div class="caption regular">
+                        <p>Tujuan utama diselenggarakannya Telkom University National Futsal Championship (TUNFC) untuk
+                            menjalin dan memperkuat tali persaudaraan antar mahasiswa perguruan tinggi di Indonesia.</p>
+                    </div>
+                    <div class="space"></div>
+                    <div id="MaskotImg"></div>
+                    <div class="space"></div>
+                    <div class="caption regular">
+                        <p>TUNFC juga memberikan pengalaman kepada mahasiswa untuk bersaing secara kompetitif di bidang
+                            futsal dan membantu melahirkan atlet-atlet futsal berkualitas yang nantinya diharapkan mampu
+                            mengharumkan nama Indonesia</p>
+                    </div>
+                </div>
+            </div>
+
+             Dukungan Pemain Pro
+            <div class="row content-h hide">
+                <div class="col dukungan">
+                    <h1 class="extrabold">Dukungan Pemain Pro</h1>
+                    <div id="DukunganImg"></div>
+                    <div class="space"></div>
+                    <div class="caption regular">
+                        <p>Telkom University National Futsal Championship (TUNFC) selalu menghadirkan inovasi tak
+                            terduga tiap tahunnya. Terbukti pada tahun 2018, TUNFC berhasil menjalin kerjasama dengan
+                            Syahidan Lubis. Bambang Bayu Saptaji, Andri Kustiawan dan Bonsu Hasibuan kemudian berhasil
+                            digaet pada TUNFC 2019</p>
+                    </div>
+                </div>
+            </div>
+
+            Piala Bergilir
+            <div class="row content-h hide">
+                <div class="col maskot">
+                    <h1 class="extrabold text-right">Piala Bergilir TUNFC</h1>
+                    <div class="maskot-video">
+                        <h2 class="text-center">video</h2>
+                    </div>
+                    <div class="space"></div>
+                    <div>
+                        <div id="MaskotImg"></div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="caption regular">
+                        <p>TUNFC memiliki piala bergilir yang sangat bergengsi. Tidak puas dengan capaian di tahun-tahun
+                            sebelumnya, di tahun 2018 TUNFC menyediakan piala bergilir yang nantinya dapat dibawa pulang
+                            oleh tim universitas yang berhasil menjadi juara pertama pada perhelatan TUNFC tiga kali
+                            berturut-turut</p>
+                    </div>
+                </div>
+            </div>
+
+            Spacer 
+            <div class="row trophyToHall">
+
+            </div>
+
+            Hall Of Fame 
+            <div class="row content-v">
+                <div class="col halloffame">
+                    <h1 class="extrabold r90">Hall Of Fame</h1>
+                    <div id="HallImg"></div>
+                    <div class="caption regular">
+                        <p>Setiap penyelenggaraannya TUNFC selalu menghasilkan juara baru. Terbukti sejak awal berdiri
+                            hingga sekarang, belum pernah ada perguruan tinggi yang memenangkan TUNFC secara berturut
+                        </p>
+
+                        <div class="space"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         </div>
-        <div class="col-12 my-3">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="assets/ig.svg" alt="" width="24px" height="24px"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="assets/line.svg" alt="" width="24px" height="24px"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="assets/tw.svg" alt="" width="24px" height="24px"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="assets/fb.svg" alt="" width="24px" height="24px"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="assets/yt.svg" alt=""  height="28px"></a>
-                </li>
-            </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="row pb-4 pt-5 px-3 m-0 footer justify-content-center">
+        <div class="col-12 col-md-8">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <h3 class="bold">TUNFC</h3>
+                    <p>Telkom University National <br/>Futsal Championship</p>
+                </div>
+                <div class="col-4 p-0 m-0">
+                    <ul class="nav flex-column text-right">
+                        <li class="nav-item">
+                            <a class="nav-link semibold" href="#">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link semibold" href="#">Artikel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link semibold" href="#">Rekruitmen</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 my-3">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <div>
+                            <a class="nav-link" href="#"><img src="assets/ig.svg" alt="" width="24px" height="24px"></a>
+                        </div>
+                        <div>
+                            <a class="nav-link" href="#"><img src="assets/line.svg" alt="" width="24px"
+                                    height="24px"></a>
+                        </div>
+                        <div>
+                            <a class="nav-link" href="#"><img src="assets/tw.svg" alt="" width="24px" height="24px"></a>
+                        </div>
+                        <div>
+                            <a class="nav-link" href="#"><img src="assets/fb.svg" alt="" width="24px" height="24px"></a>
+                        </div>
+                        <div>
+                            <a class="nav-link" href="#"><img src="assets/yt.svg" alt="" height="28px"></a>
+                        </div>
+                    </div>
+                    <!-- <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="assets/ig.svg" alt="" width="24px" height="24px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="assets/line.svg" alt="" width="24px" height="24px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="assets/tw.svg" alt="" width="24px" height="24px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="assets/fb.svg" alt="" width="24px" height="24px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="assets/yt.svg" alt="" height="28px"></a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
         </div>
     </div>
 
@@ -343,6 +737,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>

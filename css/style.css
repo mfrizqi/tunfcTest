@@ -1,3 +1,5 @@
+/* Mobile Version */
+
 /* Header */
 .header {
   margin: 10em 0 0 0;
@@ -216,9 +218,72 @@
 .footer a {
   color: white;
 }
-/* 
+
+/* Desktop Version */
 @media (min-width: 576px) {
-  .mobile-screen {
-    display: none;
+  /* .responsive-screen {
+      display: none;
+    } */
+
+  /* Header */
+  .header {
+    margin: 10em 0 0 0;
   }
-} */
+
+  .header .title {
+    font-size: 8vw;
+  }
+
+  .header .subtitle {
+    margin: 1em 0 0 0;
+    font-size: 2vw;
+    width: 40%;
+  }
+
+  .header .caption {
+    margin: 6em 0 10em 0;
+    font-size: 1.5vw;
+    width: 45%;
+  }
+
+  .caption {
+    font-size: 1.2vw;
+    line-height: 150%;
+  }
+
+  /* Content Spacing*/
+  .content-v {
+    margin: 20em 0 0 0;
+  }
+  
+  .content-h {
+    margin: 10em 0 0 0;
+  }
+
+  /* Tujuan Content */
+
+  .tujuan h1{
+      font-size: 4vw;
+  }
+    .tujuan .caption {
+    margin: 15em 0 0 0;
+    width: 90%;
+  }
+  
+  .tujuan .space {
+    margin: 9vh;
+  }
+  
+  #TujuanImg {
+    position: absolute;
+    top: -18vw;
+    right: 12vw;
+    content: "";
+    width: 25vw;
+    height: 420px;
+    background-color: #ececec;
+    /* background-image:  */
+  }
+
+  /* End Line of Desktop Version */
+}
