@@ -155,6 +155,31 @@ body {
     background-color: #ececec;
 }
 
+/* Hall Of Fame Content */
+
+.halloffame .caption{
+    margin: 8em 0 0 0;
+    width: 95%
+}
+
+.halloffame .space{
+    margin: 9vh;
+}
+
+#HallImg{
+    position: absolute;
+    top: -16em;
+    right: 1em;
+    content: "";
+    width: 240px;
+    height: 320px;
+    background-color: #ececec;
+}
+
+.trophyToHall{
+    margin: 8em 0 8em 0;
+}
+
 /* Menu when viewport on mobile device */
 .menublock {
     height: 100vh;
@@ -214,4 +239,23 @@ body {
     position: absolute;
     right: 0px;
     top: 16px;
+}
+
+.footer{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a{
+    color: white;
+}
+
+@media (min-width: 576px) {
+    .mobile-screen{
+        display: none;
+    }
 }
