@@ -65,10 +65,10 @@
         <div class="container-fluid">
             <!-- Header Section -->
             <div class="row justify-content-center">
-                <div class="col-10 col-md-6">
-                    <div class="header mt-5">
-                        <h1 class="extrabold title">Rekrutmen</h1>
-                        <p class="subtitle medium">Rekrutmen panitia Telkom Univesity National Futsal Championship untuk tahun angkatan 2017, 2018, 2019
+                <div class="col-10 col-md-5">
+                    <div class="formheader mt-5">
+                        <h1 class="extrabold">Rekrutmen</h1>
+                        <p class="medium">Rekrutmen panitia Telkom University National Futsal Championship untuk tahun angkatan 2017, 2018, 2019
                         </p>
                         
                     </div>
@@ -77,28 +77,28 @@
 
             <!-- Form Section -->
             <div class="row justify-content-center my-4">
-                <div class="col-10 col-md-6">
+                <div class="col-10 col-md-5">
                     <form>
                         <div class="form-group mb-4">
                           <label for="Nama">Nama</label>
-                          <input type="text" class="form-control" id="Nama" placeholder=" ">
+                          <input type="text" class="form-control" id="Nama" required>
                         </div>
                         <div class="form-group mb-4">
                           <label for="NIM">NIM</label>
-                          <input type="text" class="form-control" id="NIM" placeholder=" ">
+                          <input type="text" class="form-control" id="NIM" required>
                         </div>
                         <div class="form-group mb-4">
                             <label for="Fakultas">Fakultas <br/> <span class="text-muted">Contoh : Fakultas Teknik Industri</span></label>
-                            <input type="text" class="form-control" id="Fakultas" placeholder=" ">
+                            <input type="text" class="form-control" id="Fakultas" required>
                           </div>
                           <div class="form-group mb-4">
                             <label for="Jurusan">Jurusan <br/> <span class="text-muted">Contoh : S1 Informatika</span> </label>
-                            <input type="text" class="form-control" id="Jurusan" placeholder=" ">
+                            <input type="text" class="form-control" id="Jurusan" required>
                           </div>
                           <div class="form-group">
                                 <label for="Foto34">Upload Foto 3x4 (Background merah)</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="customFile">
+                                <input type="file" class="custom-file-input" id="customFile" required>
                                 <label class="custom-file-label" for="customFile">Pilih File</label>
                               </div>
                           </div>
@@ -177,7 +177,7 @@
               var fileName = $(this).val().split("\\").pop();
               $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
             });
-            </script>
+    </script>
 </body>
 
 </html>
