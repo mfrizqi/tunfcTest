@@ -10,6 +10,10 @@
     display: block;
   }
   
+  .thin {
+    font-weight: 300;
+  }
+
   .regular {
     font-weight: 400;
   }
@@ -37,14 +41,29 @@
 
   /* Menu when viewport on mobile device */
 .menublock {
+  position: absolute;
   height: 100vh;
   width: 100vw;
   background-color: #1a1a1a;
 }
 
 .menutitle {
+  margin: 2em 0 0 0 ;
   letter-spacing: 0.05em;
-  font-weight: 700;
+  font-size: 12vw;
+}
+
+.closebtn {
+  width: 100%;
+  height: auto;
+  margin: 2em 0 0 0;
+}
+
+.closeMe {
+  background-image: url("../assets/cancel.svg");
+  height: 32px;
+  width: 32px;
+  /* background-color: greenyellow; */
 }
 
 .burgericon {
@@ -52,21 +71,6 @@
   height: auto;
   width: auto;
   top: -8px;
-}
-
-.closebtn {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin: 2em 0 0 0;
-}
-
-.closeMe {
-  position: absolute;
-  right: 0px;
-  background-image: url("assets/cancel.svg");
-  height: 40px;
-  width: 40px;
 }
 
 #rectangle1 {
@@ -101,8 +105,18 @@
   color: #ffffff;
 }
 
-.footer a {
+.footer a{
   color: white;
+}
+
+.menulink{
+  margin: 4em 0 0 0;
+}
+
+.menulink a{
+  padding: .5rem 0;
+  font-size: 8vw;
+  color: #FFFFFF;
 }
 
 

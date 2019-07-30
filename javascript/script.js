@@ -1,10 +1,12 @@
+var sfade = 200;
+
 $("#ToMenu").click(()=>{
-    alert("To The Menu!");
-    $("#FullMenu").show();
-    $(".mobile-screen").hide();
+    $("#FullMenu").fadeIn(sfade);
+    $("#BodyContent").fadeOut(sfade);
 })
 
 $("#CloseBtn").click(()=>{
-    $("FullMenu").hide();
-    $(".mobile-screen").show();
+    $("#FullMenu").fadeOut(sfade);
+    $("#BodyContent").fadeIn(sfade);
 })
+
